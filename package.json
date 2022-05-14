@@ -1,4 +1,5 @@
 {
+  "homepage": "https://chinmaykhandal.github.io/aviate_assignment/",
   "name": "aviate_assignment",
   "version": "0.1.0",
   "private": true,
@@ -46,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
