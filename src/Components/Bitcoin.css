@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+.bitcoin{
+    
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.8px;
+    width: 800px;
+    margin: auto;
+}
+.content{
+    width: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.heading{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:1024px) {
+    .heading{
+        font-size: 35px;
+    }
+    .content{
+        font-size: 10px;
+    }
+}

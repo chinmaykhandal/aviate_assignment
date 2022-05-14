@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Blockchain from "./Components/Blockchain";
+import Bitcoin from "./Components/Bitcoin";
+import CurrencyCalc from "./Components/CurrencyCalc";
+import Visualize from "./Components/Visualize";
+import Navbar from "./Components/Navbar";
+import React from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Blockchain />} />
+          <Route path="/bitcoin" element={<Bitcoin />} />
+          <Route path="/currencycalc" element={<CurrencyCalc />} />
+          <Route path="/visualize" element={<Visualize />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
